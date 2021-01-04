@@ -21,14 +21,14 @@ $\Rightarrow U(x,y,0)=U_o(x,y,0^-)T(x,y)=\frac{1}{\sqrt{2\pi}^3} \iint \limits_{
 \frac{\mathcal{FT}_{2D}^{-1}\left[ b(k_x,k_y) \right]}{\sqrt{2\pi}}\Rightarrow b(k_x,k_y)=\sqrt{2\pi} \mathcal{FT}_{2D}\left[ U(x,y,0) \right]$
 summarizing we have $\psi(\vec{r},t)=\left( \frac{1}{2\pi} \right) \iint\limits_{-\infty}^{\quad \infty}\mathcal{FT}_{2D}\left[ T(x,y)U_o(x,y,0^-) \right]e^{i \left( \vec{k}\cdot\vec{r}-\omega_0 t \right)}dk_x dk_y$\\
 under the approximation where $|k_x|,|k_y| \ll \|\vec{k}\|$ we get:
-\begin{equation} \label{eqn:farfield}
+\begin{equation} \label{eqn:nearfield}
     U(x,y,z)=\frac{k_0}{2\pi iz}e^{ik_0 z}\iint\limits_{-\infty}^{\quad \infty}U(x',y',0)e^{i\frac{k_0}{2z}((x-x')^2+(y-y'^2))}dx' dy'
 \end{equation}
-known as the fernel integral.\\
+known as the Fresnel integral.\\
 taking the approximation further and assuming also $\frac{k_0 D^2}{2z} \\ \pi$ where $D$ is a length such that T(x,y) is 0 outside a square of side length $D$
 we get:
-\begin{equation}\label{eqn:nearfield}
+\begin{equation}\label{eqn:farfield}
     U(x,y,z)=-\frac{ik}{z}e^{ik(z+\frac{x^2+y^2}{2z})}\mathcal{FT}_{2D}\left[ U(x',y',0) \right]_{k_x=\frac{kx}{z},k_y=\frac{ky}{z}}
 \end{equation}
-known as the near field approximation.\\
+known as the far field approximation.\\
 Finally let us define as $I=|U|^2$ The reason for this definition is that our measuring devices measures a time average of the amplitude of our wave function $\psi$
