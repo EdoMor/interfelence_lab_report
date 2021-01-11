@@ -23,9 +23,9 @@ $\Rightarrow U_o(x,y,0^-)T(x,y)=\frac{1}{\sqrt{2\pi}^3} \iint \limits_{-\infty}^
 \\Summarizing, we have:\\
 $\psi(\vec{r},t)=\frac{1}{2\pi} \iint\limits_{-\infty}^{\quad \infty}\mathcal{FT}\left[ T(x,y)U_o(x,y,0^-) \right]e^{i \left( \vec{k}\cdot\vec{r}-\omega_0 t \right)}dk_x dk_y$
 under the approximation where $|k_x|,|k_y| \ll \|\vec{k}\|$ we get:
-\begin{eqnarray} \label{eq:nearfield}
-    U(\vec{r})=\frac{k_0 e^{ik_0 z}}{2\pi iz}$\iint\limits_{-\infty}^{\quad \infty}U(x',y',0)e^{i\frac{k_0}{2z}((x-x')^2+(y-y'^2))}dx' dy'$
-\end{eqnarray}
+\begin{align} \label{eq:nearfield}
+    U(\vec{r})=\frac{k_0 e^{ik_0 z}}{2\pi iz}\iint\limits_{-\infty}^{\quad \infty}U(x',y',0)e^{i\frac{k_0}{2z}((x-x')^2+(y-y'^2))}dx' dy'
+\end{align}
 known as the Fresnel integral.\\
 Taking the approximation further and assuming also $\frac{k_0 D^2}{2z} \ll \pi$ where $D$ is a length such that T(x,y) is 0 outside a square of side length $D$
 we get:
@@ -35,8 +35,7 @@ we get:
 \end{equation}
 known as the far field approximation.\\
 Finally let us define as $I=|U|^2$ The reason for this definition is that our measuring devices measures a time average of the amplitude of our wave function $\psi$.\\
-Our final subject is the case where the slit is of a shape as in~\ref{fig:expansion slit shape}, for a spring such as in~\ref{fig:spring parameters
-illustration}
+Our final subject is the case where the slit is of a shape as in~\ref{fig:expansion slit shape}, for a spring such as in~\ref{fig:spring parameters illustration}
 the interference pattern is as shown in~\ref{fig:expansion interference simulation} notice the "X" shape with angle $\theta$ between the arms of the "X"
 this angle is indeed half of the angle $2\theta$ shown in~\ref{fig:spring parameters illustration}
 as for the arms themselves notice the interference within them, the spacing between maxima in the two arms slightly differs,
@@ -44,4 +43,3 @@ let us mark $\Delta_1$ as the smaller of the two and $\Delta_2$ as the larger.
 now the diameter of the spring can be calculated as
 $d=\frac{\lambda z}{\Delta_1}$ and the pitch as $p=\frac{\lambda z}{\Delta_2}$.\\
 \input{figures/expansion theory illustration.tex}
-\\ \\
