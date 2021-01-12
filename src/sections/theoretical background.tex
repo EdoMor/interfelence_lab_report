@@ -14,17 +14,19 @@ describing the origin illuminating our block.
 We shall mark $\psi(x,y,0,t)=T(x,y)U_o(x,y,0^-)e^{-i\omega t}$ As the wavefunction describing our wave immediately after the block
 Such a wavefunction can be described in terms of plane waves as $\psi(\vec{r},t)=\left( \frac{1}{\sqrt{2\pi}} \right)^3 \iiint\limits_{-\infty}^{\quad \infty}b(\vec{k})e^{i \left( \vec{k}\cdot\vec{r}-\omega_k t \right)}d^{3}k$
 a further simplification we shall take is to demand that the source will be monochromatic making $\omega_k\rightarrow \omega_0$ $\omega_0=k_{0}c=\|\vec{k}\|c \Rightarrow k_z=\sqrt{k_0^2-k_x^2-k_y^2}$
-And thus our 3 dimensional integral is reduced to 2 dimensions:\\
-$\psi\rightarrow\hat{\psi}=\frac{1}{\sqrt{2\pi}^3}e^{-i\omega_0 t}\underbrace{\iint\limits_{-\infty}^{\quad \infty}
-b(\vec{k})e^{i\left( k_x x+k_y y+\sqrt{k_0^2 -k_x^2 -k_y^2} z \right)}dk_x dk_y}_{U(x,y,z)}$
-$\Rightarrow U_o(x,y,0^-)T(x,y)=\frac{1}{\sqrt{2\pi}^3} \iint \limits_{-\infty}^{\quad \infty}b(k_x,k_y)e^{ik_x x+k_y y}=
-\frac{\mathcal{FT}^{-1}\left[ b(k_x,k_y) \right]}{\sqrt{2\pi}}\Rightarrow b(k_x,k_y)=\sqrt{2\pi} \mathcal{FT}_{2D}\left[ U(x,y,0)
-\right]$
+And thus our 3 dimensional integral is reduced to 2 dimensions:
+\begin{aligned}
+    &\psi\rightarrow\hat{\psi}=\frac{1}{\sqrt{2\pi}^3}e^{-i\omega_0 t}\underbrace{\iint\limits_{-\infty}^{\quad \infty}
+    b(\vec{k})e^{i\left( k_x x+k_y y+\sqrt{k_0^2 -k_x^2 -k_y^2} z \right)}dk_x dk_y}_{U(x,y,z)}\\
+    &\Rightarrow U_o(x,y,0^-)T(x,y)=\frac{1}{\sqrt{2\pi}^3} \iint \limits_{-\infty}^{\quad \infty}b(k_x,k_y)e^{ik_x x+k_y y}= \\
+    &\frac{\mathcal{FT}^{-1}\left[ b(k_x,k_y) \right]}{\sqrt{2\pi}}\Rightarrow b(k_x,k_y)=\sqrt{2\pi} \mathcal{FT}_{2D}\left[ U(x,y,0)
+    \right]
+\end{aligned}
 \\Summarizing, we have:\\
 $\psi(\vec{r},t)=\frac{1}{2\pi} \iint\limits_{-\infty}^{\quad \infty}\mathcal{FT}\left[ T(x,y)U_o(x,y,0^-) \right]e^{i \left( \vec{k}\cdot\vec{r}-\omega_0 t \right)}dk_x dk_y$
 under the approximation where $|k_x|,|k_y| \ll \|\vec{k}\|$ we get:
 \begin{align} \label{eq:nearfield}
-    U(\vec{r})=\frac{k_0 e^{ik_0 z}}{2\pi iz}\iint\limits_{-\infty}^{\quad \infty}U(x',y',0)e^{i\frac{k_0}{2z}((x-x')^2+(y-y'^2))}dx' dy'
+    &U(\vec{r})=\frac{k_0 e^{ik_0 z}}{2\pi iz}\iint\limits_{-\infty}^{\quad \infty}U(x',y',0)e^{i\frac{k_0}{2z}((x-x')^2+(y-y'^2))}dx' dy'
 \end{align}
 known as the Fresnel integral\cite{fresnel}.\\
 Taking the approximation further and assuming also $\frac{k_0 D^2}{2z} \ll \pi$ where $D$ is a length such that T(x,y) is 0 outside a square of side length $D$
