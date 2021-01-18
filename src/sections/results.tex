@@ -1,26 +1,21 @@
 \section{Results}\label{sec:results}
 In order to be able to correctly analyse the diffraction pattern of a helix let us deconstruct it into segments.
 Slit patterns can be thought of as an approximation of one-dimensional sections of a helix, they also have a well-known solution.
-\subsection{Double-slit patterns}
-According to the theory we used, the intensity for double slit patterns can be approximated as:
-\begin{aligned}
-        I(x)=\frac{kd^2\cos^2\left(\frac{kLx}{2z}\right)sinc^2\left(\frac{dkx}{2z}\right)}{z\pi}
-\end{aligned}
 
-\input{figures/0.04w0.025s memory.tex}
-After taking into consideration the iris effect, our model describes our measurements with an error of $(\sigma\sim0.01)$
-Where $\sigma=$
-The local minima seem to increase in value closer to $x=0$, and we are able to predict tha general shape of the diffraction.
-We also see an offset between theory and experiment that is, especially around the tails, one-sided.
-We believe that tendency towards a certain side is duo to the fact that we scanned in a certain direction and the photoelectric sensor's measurement at a certain point is affected by measurements made a short time before that.
+\subsection{Single slit section}
+Taking the horizontal section of the helix we noticed that it can be described as:
+\[T(x)\approx 1-rect(x/R)\]
+Where we treat the helix as approximately a cylinder, which is, in the context of our 1-D section, the complement diffracting body of a single slit.
+\input{figures/Single slit section.tex}
 
+\subsection{N slits section}
+If we take the section perpendicular to that we've discussed earlier, there's a resemblance to the n slits pattern.
+The width of the helix is now the distance between two slits, and the pitch is the width of each slit.
+For the section taken along the middle of the helix we have: \[L=\frac{p}{2}-d',d'=\frac{d}{\sin \theta}\]
+Where $d'$ is the width of the effective slit.
+\input{figures/n slits section.tex}
 
-As seen in Figure 6, when increasing the width of each slit we see that the $sinc$ function is narrower, and for greater spaces between slits we see the increase in the $cos$ function's frequency as expected.
-What's not predicted by our theory is the decrease in maximum amplitude which shouldn't change when altering the spacing,
-that can be explained by the fact we centered the maximum amplitude of the laser between slits for symmetry thus creating a decrease in amplitude of the incoming plane wave.
-\input{figures/other doubles.tex}
 \input{figures/10 slits per mm.tex}
-\newpage
 In the case of the periodic diffraction grating "10 lines per mm" the secondary effects are more pronounced especially
 the photoelectric sensor's "memory" (The photoelectric sensor has a relaxation period in which to voltage diminishes
 therefore after exposure instead of an immediate cut off a slope can be seen as the voltage is recorded with the relation

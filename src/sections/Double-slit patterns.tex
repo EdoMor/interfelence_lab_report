@@ -1,0 +1,20 @@
+\section{Double-slit patterns}\label{sec:Double slit}
+According to the theory we used, the intensity for double slit patterns can be approximated as:
+\begin{aligned}
+    I(x)=\frac{kd^2\cos^2\left(\frac{kLx}{2z}\right)sinc^2\left(\frac{dkx}{2z}\right)}{\pi z}
+\end{aligned}
+
+\input{figures/0.04w0.025s memory.tex}
+After taking into consideration the iris effect, our model describes our measurements with an error of $\sigma\sim0.01 $
+(Where $\sigma$ was defined as the STD of the residuals),
+The local minima seem to increase in value closer to $x=0$, and we are able to predict the general shape of the diffraction.
+We also see an offset between theory and experiment that is, especially around the tails, one-sided.
+We believe that tendency towards a certain side is duo to the fact that we scanned in a certain direction and the photoelectric sensor's measurement has a certain relaxation time which is not included in our model.
+
+\input{figures/other doubles.tex}
+
+As seen in Figure \ref{other doubles}, when increasing the width of each slit the $sinc$ function is narrower, and for greater spaces between slits we see the increase in the $cos$ function's frequency as expected.
+However, there's a change in amplitude upon changing $L$, contrary to what we'd predict.
+That change comes from the fact we centered our laser beam between the slits, by measuring two positions of the slit for which we measure maximum amplitude then setting the beam between those, and greater distance between the slits means smaller initial amplitude for our plain wave.
+
+
