@@ -1,12 +1,17 @@
 \section{Results}\label{sec:results}
 In order to be able to correctly analyse the diffraction pattern of a helix let us deconstruct it into segments.
-Slit patterns can be thought of as an approximation of one-dimensional sections of a helix, they also have a well-known solution.
+Slit patterns can be thought of as an approximation of one-dimensional sections of a helix, they also have a well-known solution which we have confirmed by measuring the diffractions from those slit patterns.
+
+\input{figures/HelixSections.tex}
 
 \subsection{Single slit section}
 Taking the horizontal section of the helix we noticed that it can be described as:
-\[T(x)\approx 1-rect(x/R)\]
-Where we treat the helix as approximately a cylinder, which is, in the context of our 1-D section, the complement diffracting body of a single slit.
+\[T(x)\approx 1-rect(\frac{x}{2R})\]
+Where we treat the helix as approximately a cylinder, which is, in the context of our 1-D section (\ref{fig:HelixSection1}), the complement diffracting body of a single slit.
 \input{figures/Single slit section.tex}
+The single slit model used in Figure~\ref{fig:Single slit section} describes the diffraction of our helix section with an error of $\sigma\approx0.1$.
+The camera's sensor was saturated around $x=0$ and therefore that data was excluded from the fit.
+We can also see oscillations around the main peak of the fit,
 
 \subsection{N slits section}
 If we take the section perpendicular to that we've discussed earlier, there's a resemblance to the n slits pattern.
