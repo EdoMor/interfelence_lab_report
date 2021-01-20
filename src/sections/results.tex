@@ -1,17 +1,28 @@
 \section{Results}\label{sec:results}
-In order to be able to correctly analyse the diffraction pattern of a helix let us deconstruct it into segments.
+According to equation \eqref{eq:farfield} and the specified approximations the interference pattern can be calculated using
+the 2 dimensional fourier transform of the shape of the slit, Taking the inverse fourier transform of the pattern should result
+In the square of the shape of the slit (since when calculating the intensity the square of $U$ was taken)
+as can be shown by \ref{fig:expansion theory measurements}
+\input{figures/expantion meshured interference pattern.tex}
+\input{figures/expantion inverse fourie transform.tex}
+While far from identical, the two images have some similarities, the bright section in the middle of the "squared helix" and the darker rings around it.
+To be able to further analyse the diffraction pattern of a helix let us deconstruct it into segments.
 Slit patterns can be thought of as an approximation of one-dimensional sections of a helix, they also have a well-known solution which we have confirmed by measuring the diffractions from those slit patterns.
 
 \input{figures/HelixSections.tex}
 
 \subsection{Single slit section}
 Taking the horizontal section of the helix we noticed that it can be described as:
-\[T(x)\approx 1-rect(\frac{x}{2R})\]
+\[T(x)\approx 1-rect\left(\frac{x}{2R}\right)\]
 Where we treat the helix as approximately a cylinder, which is, in the context of our 1-D section (\ref{fig:HelixSection1}), the complement diffracting body of a single slit.
 \input{figures/Single slit section.tex}
 The single slit model used in Figure~\ref{fig:Single slit section} describes the diffraction of our helix section with an error of $\sigma\approx0.1$.
 The camera's sensor was saturated around $x=0$ and therefore that data was excluded from the fit.
-We can also see oscillations around the main peak of the fit,
+We can also see oscillations around the main peak of the fit that increase in amplitude closer to $x=0$, we believe those are the result of the lack of focus in our picture.
+There are oscillations in intensity along the "X" sections and the closer we get to the center of the single slit section the more they affect the intensity we measure.
+\\
+The radius of the helix according to the fit:
+\[\]
 
 \subsection{N slits section}
 If we take the section perpendicular to that we've discussed earlier, there's a resemblance to the n slits pattern.
@@ -19,19 +30,16 @@ The width of the helix is now the distance between two slits, and the pitch is t
 For the section taken along the middle of the helix we have: \[L=\frac{p}{2}-d',d'=\frac{d}{\sin \theta}\]
 Where $d'$ is the width of the effective slit.
 \input{figures/n slits section.tex}
+Our model for N-slits is far from being able to predict the diffraction along the relevant section, we believe this is due to the focus problem discussed earlier.
+While the model predicts some of the locations of local maxima, it fails to predict their amplitude and the behaviour of the pattern between those maxima.
+The intensity changes faster relative to the single slit model and the focus effect is more dominant for this section.
+We therefore decided not to rely on the parameters of the spring extrapolated from the fit.
 
-\input{figures/10 slits per mm.tex}
-In the case of the periodic diffraction grating "10 lines per mm" the secondary effects are more pronounced especially
-the photoelectric sensor's "memory" (The photoelectric sensor has a relaxation period in which to voltage diminishes
-therefore after exposure instead of an immediate cut off a slope can be seen as the voltage is recorded with the relation
-to the angle which continues to change during said period giving us higher peaks and wider slopes near those peaks)\\
-\\
-Finally To justify the title of the paper we should look at the interference pattern of the helix (Which bears some resemblance the shape off DNA)
-according to equation \eqref{eq:farfield} and the specified approximations the interference pattern can be calculated using
-the 2 dimensional fourier transform of the shape of the slit, Taking the inverse fourier transform of the pattern should result
-In the square of the shape of the slit (since when calculating the intensity the square of $U$ was taken)
-as can be shown by \ref{fig:expansion inverse fourie transform}
-\input{figures/expantion meshured interference pattern.tex}
-\input{figures/expantion inverse fourie transform.tex}
-As can be seen in \ref{fig:expansion fourie transform magnified} The result shows similarity to the calculation done in \ref{fig:expansion theory measurements}
-in shape as in the orientation of the spring to the orientation of the "X"
+\subsection{The "X" sections}
+The two final sections are another way for us to compute the parameters of the slits.
+In the example of N-slits section we saw that the locations of local maxima wasn't extremely affected by our measuring method.
+We assume the same is true for the "X" sections, \ref{fig:X sections} and compute $d$ and $p$:
+\[\]
+Finally using some trigonometry we can get the following relation:
+\[R=\frac{p}{4\tan \theta}+\frac{d}{2}\approx \]
+The result is of the same scale as what we got from the fit for the single slit section.
